@@ -28,6 +28,7 @@
   background-size: cover;
   height: 500px;
   margin-bottom: 50px;
+  margin-top: -80px;
 
 
 }
@@ -38,6 +39,8 @@
      background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
    max-width: 500px;//最大宽度
    margin-top: 100px;//和顶部拉开距离
+   padding-top: 15px;
+   padding-bottom: 15px;
    margin-bottom: 0;//这样就可以紧接息面的描述文字
    border-top-right-radius: 3px;//右上角圆边
    border-top-left-radius: 3px;//左上角圆边
@@ -109,7 +112,7 @@
 
       width: 2500px;
       border-top: 3px solid #e7e7e7;
-      margin-top: 10px
+      margin-top: 5px
   }
 
 
@@ -118,7 +121,8 @@
       text-align:center;
       color: #008cba;//字体颜色
       font-size: 20px;//字体大小
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+      margin-top: 10px;
 
   }
 
@@ -130,6 +134,7 @@
 
 
 
+//--更改表格样式 ->
 
 .custab{
   border: 1px solid #ccc;
@@ -146,14 +151,14 @@
   transition: 0.5s;
 }
 
-
+//--navabar ->
 
  .navbar-default {
      background-color: #ffffff;  //背景颜色
 
      border-color: #f0f1f4; //边框色
 
-     margin-bottom: 0; //底部 margin 不撑开距离
+    //  margin-bottom: 0; //底部 margin 不撑开距离
  }
 
 
@@ -164,7 +169,7 @@
   }
 
 
-//--navabar ->
+
 
    .navbar-default .navbar-brand {
      color: #008cba; //字体颜色
@@ -215,15 +220,16 @@
     .navbar-brand > img {
         display: inline-block; //图片和链接文字显示在同一行
         margin-right: 15px; //图片和链接文字拉开一点距离
-        width: 32px; //定制图片宽度
-        height: 32px; //定制图片高度
+        padding-top: 10px;
+        padding-bottom: 5px;
+        color: #008cba;
     }
 
 //--让大图满屏显示 ->
 
     .container-fluid .jumbotron{
     padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-    margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+    margin: -20px -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
     border-radius: 0;//圆角为0
   }
 
@@ -361,12 +367,15 @@
   margin: 10px;
   text-align: center;
   top: 5px;
+  font-family: nerislight, "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  font-size: 16px;
 }
 
 .thumbnail {
     border: 0 none;
     box-shadow: none;
     margin-top: 10px;
+
 }
 
  .content-section-a {
@@ -390,6 +399,81 @@
 #search-id {
   width: 200px;
   padding-top: 7px;
+  margin-left: 300px
 
 
+}
+
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  color: #0d6ded;
+  font-size: 20px;
+  text-align: center;
+}
+
+.jobs-show0 {
+  border-bottom: 1px dotted #CCC;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+.job-table {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.jobs-show {
+  border-bottom: 1px dotted #CCC;
+  padding: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+
+//---------footer固定--------
+// html {
+//   height: 100%;
+//   box-sizing: border-box;
+// }
+//
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+//
+// body {
+//   position: relative;
+//   margin: 0;
+//   padding-bottom: 6rem;
+//   min-height: 100%;
+//   font-family: "Helvetica Neue", Arial, sans-serif;
+// }
+//
+// header
+// {background-color: #ffe4c4;
+// }
+//
+// main
+// {padding-bottom:100px;background-color: #bdb76b;
+// }
+//
+// footer
+// {height:100px;margin-top:-100px;background-color: #ffc0cb;
+//}
+
+
+html{height:100%;}
+body{min-height:100%;margin:0;padding:0;position:relative;}
+
+ header{background-color: #ffe4c4;}
+ main{padding-bottom:100px;background-color: #bdb76b;}/* main的padding-bottom值要等于或大于footer的height值 */
+footer{position:absolute;bottom:0;width:100%;height:50px;padding:8px 0;background-color:#296887;}
+
+
+//-----common----
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
 }
