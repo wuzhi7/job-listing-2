@@ -20,6 +20,9 @@
 @import "bootstrap";
 
 
+
+
+
 //- 首页加个大图 ->
 
 .jumbotron {
@@ -109,8 +112,8 @@
 
   .section-heading-spacer {
       //float: left;
-
-      width: 900px;
+      text-align: center;
+      width: 980px;
       border-top: 3px solid #e7e7e7;
       margin-top: 5px
   }
