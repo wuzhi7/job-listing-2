@@ -101,34 +101,60 @@
 
  .content-section-a {
       padding: 10px 0;
-      background-color: #f8f8f8;
+       background-color: #eaf8ff;
+      border: 2px solid #43A047;
   }
 
   .content-section-b {
       padding: 50px 0;
-      border-top: 1px solid #e7e7e7;
-      border-bottom: 1px solid #e7e7e7;
+      // border-top: 1px solid #e7e7e7;
+     border-bottom: 1px solid #e7e7e7;
   }
 
   .section-heading-spacer {
       //float: left;
       text-align: center;
-      width: 980px;
-      border-top: 3px solid #e7e7e7;
+      width: cover;
+      border-top: 2px solid #e7e7e7;
       margin-top: 5px
   }
 
-
-
-  .section-heading {
-      text-align:center;
-      color: #008cba;//字体颜色
-      font-size: 20px;//字体大小
-      margin-bottom: 10px;
-      margin-top: 10px;
-
+  .section-heading-spacer-a {
+      //float: left;
+      text-align: center;
+      width: 140px;
+      border-top: 2px solid #43A047;
+      margin-top: 5px
   }
 
+  .section-heading-a{
+      // text-align:center;
+      // color: #008cba;//字体颜色
+      // font-size: 20px;//字体大小
+      // margin-bottom: 30px;
+      // margin-top: 30px;
+      line-height:150% ;
+      margin: 20px 10px ;
+      text-align: center;
+      top: 5px;
+      font-family: nerislight, "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+      font-size: 16px;
+      font-weight:bold ;
+      letter-spacing:2px ;
+
+  }
+  .section-heading {
+      // text-align:center;
+       color: #008cba;//字体颜色
+      font-size: 20px;//字体大小
+      // margin-bottom: 30px;
+      // margin-top: 30px;
+      margin: 50px 10px 20px ;
+      text-align: center;
+      top: 5px;
+      font-family: nerislight, "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+      // font-size: 16px;
+  }
   .lead {
       font-size: 18px;
       font-weight: 400;
@@ -174,11 +200,13 @@
 
 
 
+
+
    .navbar-default .navbar-brand {
      color: #008cba; //字体颜色
 
      padding: 10px 15px; //上下10px，左右15px
-     line-height: 15px; //文字行高
+    line-height: 15px; //文字行高
    }
 
    .navbar-default .navbar-brand:hover,
@@ -224,7 +252,7 @@
         display: inline-block; //图片和链接文字显示在同一行
         margin-right: 15px; //图片和链接文字拉开一点距离
         padding-top: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         color: #008cba;
     }
 
@@ -381,9 +409,18 @@
 
 }
 
- .content-section-a {
-      padding: 15px 0 ;
-      background-color: #f8f8f8;
+.thumbnail-a{
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 0;
+    // padding-top: -20px ;
+    // text-align: center;
+}
+
+ .content-section-b {
+      padding: 15px ;
+      background-color: #F5F5F5;
+
   }
 
 
@@ -400,12 +437,18 @@
 //---------搜索--------
 
 #search-id {
-  width: 200px;
+  width: 300px;
   padding-top: 7px;
-  margin-left: 500px
-
+  // margin-left: 500px
+  text-align: center;
 
 }
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
 
 .search-info-title {
   font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
